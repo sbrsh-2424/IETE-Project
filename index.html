@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IETE - Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/52ee7c782a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="header">
+    <nav>
+        <div class="title">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <h1>IETE</h1>
+            <p>The Institution of Electronics and <br>Telecommunication Engineers, Chennai</p>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Executive Committee</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Membership</a></li>
+                <li><div class="dropdown"><button class="dropbtn">Chencon</button>
+                <div class="dropdown-content">
+                    <a href="#">2022</a>
+                    <a href="#">2021</a>
+                </div></div></li>
+                <li><div class="dropdown"><button class="dropbtn">Chenlink Newsletter</button>
+                    <div class="dropdown-content">
+                        <a href="#">Vol. 1, No. 3</a>
+                        <a href="#">Vol. 1, No. 2</a>
+                        <a href="#">Vol. 1, No. 1</a>
+                    </div></div></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="hero-title">
+        <div class="hero-heading">
+            <h1>Learning Today, <br> Leading Tomorrow</h1>
+        </div>
+        <div>
+            <ul class="demo2">
+                <p class="news-item-title"><b>UPCOMING EVENTS &amp; UPDATES</b></p>
+                <a href="./specialseminar.html">
+                  <div class="event-mini-container">
+                    <div class="event-date-container">
+                      <p class="event-date-number">30</p>
+                      <p class="event-month">MAY</p>
+                    </div>
+                    <div class="event-details-container">
+                      <p class="event-title">Webinar on IoT Security</p>
+                      <p class="event-description">(WISE-2022) organized by SETS Chennai &amp; C-DAC Hyderabad in collaboration with ISEA</p>
+                    </div>
+                  </div>
+                </a>
+              </ul>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
